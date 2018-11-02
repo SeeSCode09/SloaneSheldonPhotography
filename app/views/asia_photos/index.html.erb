@@ -1,0 +1,25 @@
+<div class="hero-section-asia">
+  <div class="hero-text">
+    <h1>Asia</h1>
+  </div>
+</div>
+
+<div class="sloaneheader">
+  <p> Photos from Asia </p>
+</div>
+
+<div class="index">
+  <ul class="small-block-grid-2">
+    <% @asia_photos.each do |asia_photo| %>
+    <li>
+
+      <div class="center-cropped">
+        <%= link_to asia_photo_path(asia_photo) do %>
+          <img src="<%= asia_photo.image %>" />
+        <% end %>
+      </div>
+      <p class="caption"><%= asia_photo.caption %></p>
+
+      <% end %>
+    </ul>
+</div>
