@@ -1,0 +1,25 @@
+<div class="hero-section-africa">
+  <div class="hero-text">
+    <h1>Africa</h1>
+  </div>
+</div>
+
+<div class="sloaneheader">
+  <p> Photos from Africa </p>
+</div>
+
+<div class="index">
+  <ul class="small-block-grid-2">
+    <% @africa_photos.each do |africa_photo| %>
+    <li>
+
+      <div class="center-cropped">
+        <%= link_to africa_photo_path(africa_photo) do %>
+          <img src="<%= africa_photo.image %>"/>
+        <% end %>
+      </div>
+      <p class="caption"> <%= africa_photo.caption %></p>
+
+    <% end %>
+  </ul>
+</div>
