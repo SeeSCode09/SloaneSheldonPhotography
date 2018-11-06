@@ -1,0 +1,19 @@
+<div class="hero-section-africa">
+  <div class="hero-text">
+    <h1>Africa</h1>
+  </div>
+</div>
+
+<div class="sign_up_form">
+  <h1> Add Photo </h1>
+  <p><%= link_to 'Back', root_path %></p>
+
+  <% if flash[:notice] %>
+    <div class="notice"><%= flash[:notice] %></div>
+  <% end %>
+  <% if flash[:alert] %>
+    <div class="alert"><%= flash[:alert] %></div>
+  <% end %>
+
+  <%= render "form" %>
+</div>

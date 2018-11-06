@@ -4,10 +4,6 @@
     <%= link_to("<Previous Picture", @asia_photo.previous) %>
   </span>
 
-  <span class="categorylink">
-    <%= link_to("Africa Index Page", africa_photos_path)%>
-  </span>
-
   <span class="next">
     <%= link_to("Next Picture >", @asia_photo.next) %>
   </span>
@@ -18,5 +14,13 @@
   <div class="showpage">
     <h1> <%= @asia_photo.caption %> </h1>
     <img src="<%= @asia_photo.image %>" />
+    <p></p>
+    <p>Country: <%= @asia_photo.country %>
+    </br>Date: <%= @asia_photo.date %>
+  </br>Description: <%= @asia_photo.description %></p>
   </div>
 </div>
+
+<span class="categorylink">
+  <h4><%= link_to("Back To Asia Index Page", asia_photos_path)%></h4>
+</span>

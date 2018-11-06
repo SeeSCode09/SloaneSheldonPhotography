@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
   resources :countries, only: [:index]
-  resources :africa_photos, only: [:new, :index, :show]
-  resources :asia_photos, only: [:index, :show]
+  resources :africa_photos, only: [:index, :new, :show, :create, :update, :destroy, :edit]
+  resources :asia_photos, only: [:index, :new, :show, :create, :update, :destroy, :edit]
 
 end
