@@ -1,0 +1,18 @@
+<h1> Edit Africa Photo </h1>
+
+<div class="index">
+  <div class="showpage">
+    <h1> <%= @africa_photo.caption %> </h1>
+    <img src="<%= @africa_photo.image %>" />
+  </div>
+</div>
+
+<span class="categorylink">
+  <h4><%= link_to("Back To Africa Index Page", africa_photos_path)%></h4>
+</span>
+
+<div class="sign_up_form">
+<span><%= link_to 'Delete', @africa_photo, method: :delete %></span>
+
+<%= render "form" %>
+</div>

@@ -20,7 +20,12 @@
 
     <section class="top-bar-section">
       <ul class="right">
-        <%- if current_user -%>
+        <% if user_signed_in? %>
+                <li>
+                  <div class="user_email">
+                    <%= current_user.email %>
+                  </div>
+                </li>
           <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
         <%- else -%>
           <li><%= link_to 'Sign Up', new_user_registration_path %></li>
@@ -47,6 +52,9 @@
   <%- end -%>
   <%= javascript_pack_tag 'application' %>
 
-  <%= yield :extra_footer %>
+  <div class="footer">
+      <%= yield :extra_footer %>
+      <%= render "layouts/footer" %>
+  </div>
 </body>
 </html>
