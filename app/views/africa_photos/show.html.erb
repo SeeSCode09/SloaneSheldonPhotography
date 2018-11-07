@@ -13,14 +13,15 @@
 <div class="index">
   <div class="showpage">
     <h1> <%= @africa_photo.caption %> </h1>
-    <img src="<%= @africa_photo.image %>" />
+    <div class="watermarked"><img src="<%= @africa_photo.image %>" alt="Photo" /></div>
     <p></p>
     <p>Country: <%= @africa_photo.country %>
     </br>Date: <%= @africa_photo.date %>
     </br>Description: <%= @africa_photo.description %></p>
   </div>
-</div>
 
-<span class="categorylink">
-  <h4><%= link_to("Back To Africa Index Page", africa_photos_path)%></h4>
-</span>
+  <span class="categorylink">
+    <h4><%= link_to("Back To Africa Index Page", africa_photos_path)%></h4>
+  </span>
+
+</div>

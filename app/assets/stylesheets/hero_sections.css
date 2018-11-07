@@ -1,0 +1,133 @@
+.hero-section-bio {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 5px;
+  background: url("https://ctcorporatetakeover.files.wordpress.com/2018/11/12593898_10205334950668436_718220964199113125_o-e1541537801824.jpg") 50% no-repeat;
+  background-size: cover;
+  height: 375px;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+
+          filter: gray; /* IE5+ */
+          -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+          -webkit-transition: all .8s ease-in-out;
+}
+
+.hero-section-bio:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+  -webkit-transform: scale(1.01);
+}
+
+.hero-section-africa {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 5px;
+  background: url("https://ctcorporatetakeover.files.wordpress.com/2018/11/12628377_10205362229390387_6471692887139324915_o.jpg") 50% no-repeat;
+  background-size: cover;
+  height: 375px;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+
+          filter: gray; /* IE5+ */
+          -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+          -webkit-transition: all .8s ease-in-out;
+}
+
+.hero-section-africa:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+  -webkit-transform: scale(1.01);
+}
+
+.hero-section-asia {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 5px;
+  background: url("https://ctcorporatetakeover.files.wordpress.com/2018/11/16177840_10207781452909463_8881026147450025600_o-e1541175038958.jpg") 50% no-repeat;
+  background-size: cover;
+  height: 375px;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+
+          filter: gray; /* IE5+ */
+          -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+          -webkit-transition: all .8s ease-in-out;
+}
+
+.hero-section-asia:hover {
+ filter: none;
+   -webkit-filter: grayscale(0);
+   -webkit-transform: scale(1.01);
+}
+
+.hero-section-north-america {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 5px;
+  background: url("https://ctcorporatetakeover.files.wordpress.com/2018/11/11057225_10204616743153697_66296140472018314_o-e1541538850874.jpg") 50% no-repeat;
+  background-size: cover;
+  height: 375px;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+
+          filter: gray; /* IE5+ */
+          -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+          -webkit-transition: all .8s ease-in-out;
+}
+
+.hero-section-north-america:hover {
+ filter: none;
+   -webkit-filter: grayscale(0);
+   -webkit-transform: scale(1.01);
+}
+
+
+.hero-text h1 {
+   text-align: center;
+   padding-left: 10%;
+   color: white;
+   font-size: 40pt;
+   font-family: cursive;
+   text-shadow: 1px 1px lightgray;
+}
