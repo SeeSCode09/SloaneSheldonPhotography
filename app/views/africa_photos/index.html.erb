@@ -19,10 +19,10 @@
 
       <div class="center-cropped">
         <%= link_to africa_photo_path(africa_photo) do %>
-          <img src="<%= africa_photo.image %>"/>
+          <img src="<%= africa_photo.image %>" onContextMenu="return false;" draggable="false"/>
         <% end %>
       </div>
-      <p class="caption"> <%= africa_photo.caption %></p>
+      <p class="caption"> <%= africa_photo.caption %> - <%= africa_photo.country %> </p>
 
     <% end %>
   </ul>

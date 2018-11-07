@@ -1,0 +1,29 @@
+<div class="hero-section-north-america">
+  <div class="hero-text">
+    <h1>North America</h1>
+  </div>
+</div>
+
+<div class="sloaneheader">
+  <p> Photos from North America </p>
+</div>
+
+<span class="categorylink">
+  <h4><%= link_to("Main Index Page", countries_path)%></h4>
+</span>
+
+<div class="index">
+  <ul class="small-block-grid-2">
+    <% @north_america_photos.each do |north_america_photo| %>
+    <li>
+
+      <div class="center-cropped">
+        <%= link_to north_america_photo_path(north_america_photo) do %>
+          <img src="<%= north_america_photo.image %>" onContextMenu="return false;" draggable="false"/>
+        <% end %>
+      </div>
+      <p class="caption"> <%= north_america_photo.caption %></p>
+
+    <% end %>
+  </ul>
+</div>
