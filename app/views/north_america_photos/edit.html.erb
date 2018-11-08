@@ -1,0 +1,18 @@
+<h1> Edit North America Photo </h1>
+
+<div class="index">
+  <div class="showpage">
+    <h1> <%= @north_america_photo.caption %> </h1>
+    <img src="<%= @north_america_photo.image %>" />
+  </div>
+</div>
+
+<span class="categorylink">
+  <h4><%= link_to("Back To North America Index Page", north_america_photos_path)%></h4>
+</span>
+
+<div class="sign_up_form">
+  <span><%= link_to 'Delete', @north_america_photo, method: :delete %></span>
+
+  <%= render "form" %>
+</div>

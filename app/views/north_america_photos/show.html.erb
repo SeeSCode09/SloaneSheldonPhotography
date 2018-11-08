@@ -1,0 +1,27 @@
+
+<div>
+  <span class="previous">
+    <%= link_to("<Previous Picture", @north_america_photo.previous) %>
+  </span>
+
+  <span class="next">
+    <%= link_to("Next Picture >", @north_america_photo.next) %>
+  </span>
+</div>
+
+
+<div class="index">
+  <div class="showpage">
+    <h1> <%= @north_america_photo.caption %> </h1>
+    <img src="<%= @north_america_photo.image %>" />
+    <p></p>
+    <p>Country: <%= @north_america_photo.country %>
+    </br>Date: <%= @north_america_photo.date %>
+  </br>Description: <%= @north_america_photo.description %></p>
+  </div>
+
+  <span class="categorylink">
+    <h4><%= link_to("Back To North America Index Page", north_america_photos_path)%></h4>
+  </span>
+
+</div>
